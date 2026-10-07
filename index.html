@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leen Sabri | Software Developer</title>
+  <meta name="description"
+    content="Leen Sabri - Junior Software Developer (Backend & Full-Stack). Computer Science, Birzeit University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    (function () {
+      try {
+        var t = localStorage.getItem("theme");
+        if (t) document.documentElement.setAttribute("data-theme", t);
+      } catch (e) { }
+    })();
+  </script>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">LS<span>.</span></a>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="sun" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" />
+            <path
+              d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+          </svg>
+          <svg class="moon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round">
+            <path d="M3 6h18M3 12h18M3 18h18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Leen Khaled Sabri</h1>
+        <h2 class="role">Junior Software Developer <span class="muted">· Backend &amp; Full-Stack</span></h2>
+        <p class="lead">
+          Computer Science graduate from Birzeit University. I build RESTful APIs, authentication flows,
+          real-time features and user-facing apps with Python, NestJS, Supabase and Flutter.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/Leen_Sabri_CV.pdf" class="btn btn-ghost" download>Download CV</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/LeenSabri" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.2.5-2.3 1.2-3.1-.1-.4-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.2.8.8 1.2 1.9 1.2 3.1 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/leen-sabri-486b8435a/" target="_blank" rel="noopener"
+            aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
+            </svg>
+          </a>
+          <a href="mailto:leen.sabri22@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 6-10 7L2 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="code-card">
+          <div class="code-dots"><span></span><span></span><span></span></div>
+          <pre><code><span class="k">const</span> leen = {
+  role: <span class="s">"Backend &amp; Full-Stack"</span>,
+  location: <span class="s">"Al-Bireh, Palestine"</span>,
+  stack: [<span class="s">"NestJS"</span>, <span class="s">"FastAPI"</span>,
+          <span class="s">"Supabase"</span>, <span class="s">"Flutter"</span>],
+  openToWork: <span class="k">true</span>,
+};</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="container stats">
+      <div class="stat"><span class="num" data-count="240">0</span><span class="label">Internship hours</span></div>
+      <div class="stat"><span class="num" data-count="420">0</span><span class="label">Cooperative & Volunteer Work
+          hours</span></div>
+      <div class="stat"><span class="num" data-count="9">0</span><span class="label">Projects built</span></div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2 class="section-title"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>
+            I'm a Computer Science graduate from <strong>Birzeit University</strong> with hands-on experience
+            in backend and full-stack development. I enjoy designing clean APIs, wiring up databases and
+            real-time features, and turning them into apps people actually use.
+          </p>
+          <p>
+            Through my <strong>backend internship</strong> and several team projects, I’ve built RESTful services,
+            authentication and
+            authorization flows, push notifications, and AI-assisted features. I’m currently looking for a
+            <strong>junior
+              backend or full-stack role</strong>..
+          </p>
+        </div>
+        <div class="edu">
+          <h3>Education</h3>
+          <div class="edu-item">
+            <p class="edu-title">B.Sc. in Computer Science</p>
+            <p class="muted">Birzeit University · 2022 – 2026</p>
+            <p class="badge">GPA 80% · Very Good</p>
+          </div>
+          <div class="edu-item">
+            <p class="edu-title">Tawjihi Certificate</p>
+            <p class="muted">Al-Bireh New Secondary Girls School · 2021 – 2022</p>
+            <p class="badge">Score 90%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2 class="section-title"><span>02.</span> Experience</h2>
+      <div class="timeline">
+        <article class="tl-item">
+          <div class="tl-head">
+            <div>
+              <h3>Backend Developer Intern <span class="muted">· Internship hours</span></h3>
+              <p class="company">Exsalt Technologies</p>
+            </div>
+            <div class="tl-meta">
+              <span>Jul 2025 – Sep 2025</span>
+              <span class="badge">240 hours</span>
+            </div>
+          </div>
+          <ul>
+            <li>Created and tested <strong>21 RESTful API endpoints</strong> for an AI-powered Markdown notes system
+              using Python, FastAPI and PostgreSQL.</li>
+            <li>Supported CRUD, AI-generated summaries, grammar checking, version history and Dropbox backup.</li>
+            <li>Implemented request validation, PostgreSQL data access, error handling and API organization; diagnosed
+              and resolved API integration issues.</li>
+          </ul>
+          <div class="tags"><span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>REST</span></div>
+          <a class="link" href="https://github.com/leenSabri22/Final-Task" target="_blank" rel="noopener">View code
+            →</a>
+        </article>
+
+        <article class="tl-item">
+          <div class="tl-head">
+            <div>
+              <h3>Community Volunteer</h3>
+              <p class="company">Birzeit University · Al-Bireh Municipality · Palestine Red Crescent Society</p>
+            </div>
+            <div class="tl-meta"><span class="badge">420 hours</span></div>
+          </div>
+          <ul>
+            <li>Completed 420 Cooperative & Volunteer Work Hours across university, municipal and humanitarian
+              organizations.</li>
+            <li>Led a community initiative with Al-Bireh Municipality.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title"><span>03.</span> Projects</h2>
+
+      <article class="featured">
+        <div class="featured-body">
+          <p class="eyebrow">Graduation Project</p>
+          <h3>FirstRespond — Real-Time Emergency Response System</h3>
+          <p>
+            An AI-assisted emergency response and volunteer coordination platform designed for the Palestinian context,
+            connecting emergency dispatchers through a web application with field volunteers through a mobile
+            application to improve response speed and coordination.
+          </p>
+          <ul>
+            <li>Built core NestJS + TypeScript backend workflows for emergency case management, volunteer registration
+              and approval, user management, and role-based access across administrators, dispatchers, and
+              volunteers.</li>
+            <li>Integrated Supabase Realtime and Firebase Cloud Messaging (FCM) to synchronize live volunteer locations,
+              case status, availability, and emergency notifications across Flutter web and mobile applications.</li>
+            <li>Developed an AI-assisted volunteer recommendation system using Groq to analyze emergency requirements
+              and rank suitable volunteers based on distance, specialization/training, points, availability, and
+              current workload, with fallback logic for reliability.</li>
+            <li>Implemented the emergency response flow from case creation and volunteer selection to notification,
+              acceptance/rejection, live tracking, and case completion.</li>
+          </ul>
+          <div class="tags">
+            <span>NestJS</span><span>TypeScript</span><span>Supabase Realtime</span><span>Flutter</span><span>FCM</span><span>Groq
+              AI</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="projects-grid">
+        <article class="card">
+          <h3>Parental Monitoring App</h3>
+          <p>Flutter parental monitoring app integrated with the Luanti game, enabling parents to securely monitor their
+            children’s in-game chat activity through a NestJS backend. Implements a three-way authentication and
+            authorization flow to securely link and control access between parents, children and the game.</p>
+          <div class="tags"><span>Flutter</span><span>NestJS</span><span>Luanti</span><span>Auth &amp; Authorization</span><span>Usable Security</span></div>
+          <a class="link" href="https://github.com/LeenSabri/Usability-Project" target="_blank" rel="noopener">GitHub
+            →</a>
+        </article>
+        <article class="card">
+          <h3>Athar — Missing Person Helper</h3>
+          <p>Web platform for missing-person support during emergencies and disasters, combining reporting, AI-assisted
+            case matching, nearby-service discovery and voice-based first-aid guidance. Integrates Groq, Nominatim,
+            Geoapify and Leaflet to compare reports, locate nearby hospitals and services, and provide location-aware
+            assistance.</p>
+          <div class="tags"><span>JavaScript</span><span>Leaflet</span><span>Groq</span><span>Nominatim</span><span>Geoapify</span></div>
+          <a class="link" href="https://github.com/LeenSabri/web-services-assignment1" target="_blank"
+            rel="noopener">GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Rental Management Website</h3>
+          <p>PHP and MySQL property rental platform where users can browse available properties, submit viewing or
+            rental requests and communicate through built-in messaging. Includes authentication and administrator
+            approval workflows for managing users, listings and rental requests.</p>
+          <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>Authentication</span></div>
+          <a class="link" href="https://github.com/LeenSabri/Web-Project" target="_blank" rel="noopener">GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Computer Store Management</h3>
+          <p>JavaFX desktop management system backed by MySQL for managing products, warehouses, suppliers, employees,
+            customers and sales orders, with CRUD operations across interconnected relational data.</p>
+          <div class="tags"><span>Java</span><span>JavaFX</span><span>MySQL</span><span>CRUD</span></div>
+          <a class="link" href="https://github.com/LeenSabri/database_project" target="_blank" rel="noopener">GitHub
+            →</a>
+        </article>
+        <article class="card">
+          <h3>Huffman Compression Tool</h3>
+          <p>Java file compression and decompression tool implementing the Huffman coding algorithm. Builds a
+            frequency-based Huffman tree and performs bit-level encoding and decoding to produce lossless compressed
+            files.</p>
+          <div class="tags"><span>Java</span><span>Huffman Coding</span><span>Lossless Compression</span></div>
+          <a class="link" href="https://github.com/LeenSabri/ALgo_Project2_HuffmanCode" target="_blank"
+            rel="noopener">GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Optimal Coin Strategy Game</h3>
+          <p>Two-player Java strategy game based on the optimal coin-picking problem, where players choose coins from
+            either end of a sequence. Uses dynamic programming to calculate the optimal strategy and maximize the
+            guaranteed collected value.</p>
+          <div class="tags"><span>Java</span><span>Dynamic Programming</span></div>
+          <a class="link" href="https://github.com/LeenSabri/AlgoProject1_dynamicProgramming" target="_blank"
+            rel="noopener">GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Statistical System for Martyrs</h3>
+          <p>JavaFX data management and statistics system for organizing martyr records by district and location. Uses
+            custom data structures including linked lists, trees, stacks and queues to store, navigate and analyze
+            records and generate statistical summaries.</p>
+          <div class="tags"><span>Java</span><span>JavaFX</span><span>Linked Lists</span><span>Trees</span><span>Stacks &amp; Queues</span></div>
+          <a class="link" href="https://github.com/LeenSabri/data_structure_project_2" target="_blank"
+            rel="noopener">GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title"><span>04.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Backend &amp; APIs</h3>
+          <div class="tags">
+            <span>Python</span><span>FastAPI</span><span>NestJS</span><span>TypeScript</span><span>RESTful
+              APIs</span><span>CRUD</span><span>Auth &amp; Authorization</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Databases</h3>
+          <div class="tags"><span>PostgreSQL</span><span>MySQL</span><span>Supabase</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="tags">
+            <span>Python</span><span>TypeScript</span><span>JavaScript</span><span>Java</span><span>PHP</span><span>Dart</span><span>HTML5</span><span>CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Frontend &amp; Mobile</h3>
+          <div class="tags"><span>Flutter (Web &amp;
+              Mobile)</span><span>HTML5</span><span>CSS</span><span>JavaScript</span><span>Android (Java)</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools &amp; Platforms</h3>
+          <div class="tags"><span>Git</span><span>GitHub</span><span>Claude Code</span><span>Firebase Cloud
+              Messaging</span><span>Railway</span><span>Linux / CLI</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Core Knowledge</h3>
+          <div class="tags"><span>Data Structures &amp; Algorithms</span><span>OOP</span><span>Database
+              Design</span><span>API Integration</span></div>
+        </div>
+      </div>
+
+      <div class="achievements">
+        <h3>Activities &amp; Achievements</h3>
+        <ul>
+          <li>Competed in IEEE and local programming competitions.</li>
+          <li>Showcased a GPS-based navigation app for visually impaired users at the Palestine Science and Technology
+            Fair.</li>
+          <li>Earned the Claude 101 certificate from Anthropic.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact">
+      <h2 class="section-title center"><span>05.</span> Get In Touch</h2>
+      <p class="lead center">
+        I'm open to junior backend and full-stack opportunities. Whether you have a role, a question, or just want to
+        say hi — my inbox is open.
+      </p>
+      <div class="hero-cta center">
+        <a href="mailto:leen.sabri22@gmail.com" class="btn btn-primary">Say Hello</a>
+        <a href="assets/Leen_Sabri_CV.pdf" class="btn btn-ghost" target="_blank" rel="noopener">View CV</a>
+      </div>
+      <p class="muted center small">Al-Bireh, Palestine</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Leen Sabri · Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
