@@ -14,12 +14,13 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
   <script>
-    // Apply saved theme before paint to avoid a flash
+    // Light by default; apply the visitor's saved choice before paint to avoid a flash
     (function () {
+      var t = "light";
       try {
-        var t = localStorage.getItem("theme");
-        if (t) document.documentElement.setAttribute("data-theme", t);
+        t = localStorage.getItem("theme") || "light";
       } catch (e) { }
+      document.documentElement.setAttribute("data-theme", t);
     })();
   </script>
 </head>
